@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+.carousel-inner{
+    padding-top: 30px;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Custom Styling for Product Card */
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card{
+    text-align: center;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+  height: 60px;
+  overflow: hidden;
+}
+
+.product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Show 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+}
+
+.btn-add-to-cart {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #0056b3;
+}

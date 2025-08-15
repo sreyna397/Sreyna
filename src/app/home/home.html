@@ -1,0 +1,28 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://img.freepik.com/premium-photo/female-hand-holding-sale-placard-clothes-shop_249974-3694.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://t3.ftcdn.net/jpg/02/80/87/76/360_F_280877676_Ugwq0uPtxQaHkDxDDkKGB7UnHmxFZT3u.jpg" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.freepik.com/premium-photo/clothes-rail-sale-sign-final-sale-discounts_441923-12397.jpg" class="d-block w-100">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="row">
+    @for (product of productService.getProducts(); track product.id) {
+        <div class="col-lg-3 col-md-4 col-sm-12 mt-3">
+            <app-product-card [product] = "product" (addToCartEvent)="addToCart($event)"></app-product-card>
+        </div>
+    }          
+</div>
